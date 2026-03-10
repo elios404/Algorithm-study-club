@@ -62,7 +62,7 @@ public class Main {
 
         //1 -> v1 -> v2 -> N 의 최단거리
         Long dict1V1V2N = dict1[v1] + dictV1[v2] + dictV2[N];
-        //1 -> v2 -> v1 -> N 의 최단거리
+        //1 -> v2 -> v1 -> N 의 최단거리.
         Long dict1V2V1N = dict1[v2] + dictV2[v1] + dictV1[N];
 
         Long ans = Math.min(dict1V1V2N, dict1V2V1N);
