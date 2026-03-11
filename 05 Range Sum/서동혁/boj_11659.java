@@ -11,7 +11,7 @@ public class boj_11659 {
         StringBuilder sb = new StringBuilder();
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        // 1 ¡Â N ¡Â 100,000, 1 ¡Â M ¡Â 100,000
+        // 1 <= N <= 100,000, 1 <= M <= 100,000
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
 
@@ -28,7 +28,7 @@ public class boj_11659 {
 
         prefixSum[0] = 0;
 
-        // O(N) -> ±¸°£ ÇÕ °è»ê
+        // O(N)
         for (int i = 1; i < N+1; i++) {
             prefixSum[i] = prefixSum[i-1] + arr[i-1];
         }
