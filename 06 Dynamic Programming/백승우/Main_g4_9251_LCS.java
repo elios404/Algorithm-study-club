@@ -7,6 +7,7 @@ public class Main_g4_9251_LCS {
     static int N, M;
     static int[][] memo;
 
+    /* O(1) */
     static void lcs(int i, int j) {
         if (a.charAt(i - 1) == b.charAt(j - 1)) {
             memo[i][j] = memo[i - 1][j - 1] + 1;
@@ -15,6 +16,7 @@ public class Main_g4_9251_LCS {
         }
     }
 
+    /* O(N * M) */
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
